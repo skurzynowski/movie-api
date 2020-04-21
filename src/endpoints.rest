@@ -1,0 +1,19 @@
+## Good request
+POST http://localhost:3000/movies
+content-type: application/json
+
+{
+    "title": "tessst",
+    "genres": ["Comedy","War"],
+    "year": 1920,
+    "runtime": 210,
+    "director": "Kurzynowski",
+    "plot": "seba",
+    "posterUrl": "posterUrls"
+}
+
+### Get random movie
+GET http://localhost:3000/movies/
+
+### Search by duration
+GET http://localhost:3000/movies?runtime=100
